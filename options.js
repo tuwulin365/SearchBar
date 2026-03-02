@@ -112,10 +112,10 @@ function getimagedata(fileinput,callback){
       var imagedata=event.target.result;
       if(imagedata.length>0){
         if(imagedata.indexOf("data:image")!=0){
-          alert("That is not an image file.");
+          alert("那不是图像文件。");
         }
         else if(imagedata.length>65535){
-          alert("That file is too big. The maximum permitted file size is "+(65535-23)*0.75+" bytes.");
+          alert("文件太大。允许的最大文件大小为 "+(65535-23)*0.75+" 字节。");
         }
         else{
           callback(imagedata);
@@ -144,7 +144,7 @@ window.addEventListener("load",function(){
   var disableall=false;
   var storageseterrorhandler=function(){
     if(typeof(chrome.runtime.lastError)!="undefined"){
-      alert("Error:\n"+chrome.runtime.lastError.message);
+      alert("错误：\n"+chrome.runtime.lastError.message);
       window.location.reload(false);
     }
   };
@@ -596,7 +596,7 @@ window.addEventListener("load",function(){
     };
     document.getElementById("searchbarbackgroundcolour").addEventListener("change",document.getElementById("searchbarbackgroundcolour").changefunction);
     document.getElementById("searchbarbackgroundcolourreset").addEventListener("click",function(){
-      if(confirm("Are you sure you want to reset to the default background color?")){
+      if(confirm("您确定要将背景颜色重置为默认颜色吗？")){
         document.getElementById("searchbarbackgroundcolour").value="#e0e0e0";
         document.getElementById("searchbarbackgroundcolour").changefunction();
       }
@@ -612,7 +612,7 @@ window.addEventListener("load",function(){
     };
     document.getElementById("buttonbackgroundcolour").addEventListener("change",document.getElementById("buttonbackgroundcolour").changefunction);
     document.getElementById("buttonbackgroundcolourreset").addEventListener("click",function(){
-      if(confirm("Are you sure you want to reset to the default background color?")){
+      if(confirm("您确定要将背景颜色重置为默认颜色吗？")){
         document.getElementById("buttonbackgroundcolour").value="#f0f0f0";
         document.getElementById("buttonbackgroundcolour").changefunction();
       }
@@ -705,7 +705,7 @@ window.addEventListener("load",function(){
             };
           })(i,j));
           findbuttonhotkeyscell.appendChild(findbuttonhotkeysinputs[i][j]);
-          findbuttonhotkeysbuttons[i][j].appendChild(document.createTextNode("remove"));
+          findbuttonhotkeysbuttons[i][j].appendChild(document.createTextNode("移除"));
           findbuttonhotkeysbuttons[i][j].addEventListener("click",(function(i,j){
             return function(event){
               settings.findbuttonhotkeys[i][j]=[false,false,false,false,false];
@@ -821,7 +821,7 @@ window.addEventListener("load",function(){
           propertiesbuttons[i][0].style.cursor="pointer";
           propertiesbuttons[i][0].addEventListener("click",(function(i){
             return function(){
-              if(disableall==false&&confirm("Are you sure you want to delete this custom search?")){
+              if(disableall==false&&confirm("您确定要删除此自定义搜索吗？")){
                 settings.custombuttons.splice(i-1,1);
                 var settingsobject={"custombuttons":settings.custombuttons};
                 for(var l=i;l<settings.custombuttons.length+1;l++){
@@ -924,7 +924,7 @@ window.addEventListener("load",function(){
             inputs[i][j].value=settings["i"+i.toString()];
             fileinputbuttons[i]=document.createElement("button");
             fileinputbuttons[i].disabled=(!settings.custombuttons[i-1][0]);
-            fileinputbuttons[i].appendChild(document.createTextNode("upload"));
+            fileinputbuttons[i].appendChild(document.createTextNode("上传"));
             cells[i][j].appendChild(fileinputbuttons[i]);
             fileinputs[i]=document.createElement("input");
             fileinputs[i].type="file";
@@ -1149,7 +1149,7 @@ window.addEventListener("load",function(){
     document.getElementById("toggleadvanced").clickfunction=function(){
       this.showing=!this.showing;
       window.name=this.showing?"advanced":"basic";
-      this.textContent=this.showing?"hide advanced options":"show advanced options";
+      this.textContent=this.showing?"隐藏高级选项":"显示高级选项";
       for(var j=0;j<8;j++){
         if(j==2||j==3||j==4||j==6||j==7){
           document.getElementsByClassName("custombuttonsheader")[j].style.display=this.showing?"table-cell":"none";
@@ -1214,17 +1214,17 @@ window.addEventListener("load",function(){
       chrome.storage.sync.clear(function(){
         chrome.storage.sync.set(settings,function(){
           if(typeof(chrome.runtime.lastError)!="undefined"){
-            alert("Error:\n"+chrome.runtime.lastError.message);
+            alert("错误：\n"+chrome.runtime.lastError.message);
             window.location.reload(false);
           }
           else{
-            alert("Settings saved to Google account successfully.");
+            alert("设置已成功保存到 Google 帐户。");
           }
         });
       });
     });
     document.getElementById("syncrestore").addEventListener("click",function(){
-      if(confirm("This will overwrite your current settings. Are you sure you want to continue?")){
+      if(confirm("这将覆盖您当前的设置。您确定要继续吗？")){
         chrome.storage.sync.get(null,function(syncsettings){
           var settingstoremove=[];
           for(var setting in settings){
@@ -1235,10 +1235,10 @@ window.addEventListener("load",function(){
           chrome.storage.local.remove(settingstoremove,function(){
             chrome.storage.local.set(syncsettings,function(){
               if(typeof(chrome.runtime.lastError)!="undefined"){
-                alert("Error:\n"+chrome.runtime.lastError.message);
+                alert("错误：\n"+chrome.runtime.lastError.message);
               }
               else{
-                alert("Settings restored from Google account successfully.");
+                alert("设置已成功从 Google 帐户恢复。");
               }
               window.location.reload(false);
             });

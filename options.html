@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html><head>
-<title>SearchBar Options</title>
+<title>SearchBar 选项</title>
 <style>
 body{
   font-family:sans-serif;
@@ -231,227 +231,227 @@ a.bigbutton:active{
 <script src="options.js"></script>
 </head><body>
 <a id="amfsmalllink" target="_blank" href="https://bit.ly/searchbar03"><img src="logo_AMF.gif" id="amfsmalllogo"></a>
-<h1><img src="icon48.png" class="icon"> SearchBar Options</h1>
+<h1><img src="icon48.png" class="icon"> SearchBar 选项</h1>
 <table><tr>
   <td id="sidebar">
-    <p id="introlink" class="sidebarlink">Introduction</p>
-    <p id="basiclink" class="sidebarlink">Basic settings</p>
-    <p id="advancedlink" class="sidebarlink">Advanced settings</p>
-    <p id="customlink" class="sidebarlink">Custom searches</p>
-    <p id="helplink" class="sidebarlink">Help/FAQ</p>
-    <p id="supportlink" class="sidebarlink">Support SearchBar</p>
-    <p id="bonuslink" class="sidebarlink">Bonus settings</p></td>
+    <p id="introlink" class="sidebarlink">介绍</p>
+    <p id="basiclink" class="sidebarlink">基本设置</p>
+    <p id="advancedlink" class="sidebarlink">高级设置</p>
+    <p id="customlink" class="sidebarlink">自定义搜索</p>
+    <p id="helplink" class="sidebarlink">帮助/常见问题</p>
+    <p id="supportlink" class="sidebarlink">支持 SearchBar</p>
+    <p id="bonuslink" class="sidebarlink">附加设置</p></td>
   <td id="intro" class="settingsbar">
-    <table class="introright"><tr><td class="introcell">press <b id="hotkeyshowmirror"></b> from a web page to open SearchBar</td><td class="introcellleft"><div id="previewcontainer1"><span id="searchbarpreview"></span></div></td></tr></table>
-    <table class="introleft"><tr><td class="introcell"><img id="introimage1" src="intro1.png"></td><td class="introcell"><b>selected text</b> appears automatically</td></tr></table>
-    <table class="introright"><tr><td class="introcellright"><p>type for <b>search suggestions</b></p><p>press a <b>button</b> or <b>hotkey</b> to search</p><p>hold Ctrl to open in a <b>new tab</b></p></td><td class="introcell"><img id="introimage2" src="intro2.png"></td></tr></table>
-    <table class="introleft"><tr><td class="introcell"><img id="introimage3" src="intro3.png"></td><td class="introcell"><b>highlight</b> search terms</td></tr></table>
-    <table class="introright"><tr><td class="introcell">right-click on an input field to add a <b>custom search</b></td><td class="introcell"><img id="introimage4" src="intro4.png"></td><td class="introcell"><img id="introimage5" src="intro5.png"></td></tr></table>
-    <table class="introleft"><tr><td class="introcell"><img id="introimage6" src="intro6.png"></td><td class="introcell"><b>customize</b> everything here</td></tr></table>
-    <table class="introright"><tr><td class="introcellright">If you experience any problems, first try refreshing the page.<br>Next try disabling and re-enabling SearchBar from Chrome's Extensions page.<br>Then go to "Help/FAQ" to view the FAQ or submit a support request.</td></tr></table>
+    <table class="introright"><tr><td class="introcell">按 <b id="hotkeyshowmirror"></b> 在网页打开 SearchBar</td><td class="introcellleft"><div id="previewcontainer1"><span id="searchbarpreview"></span></div></td></tr></table>
+    <table class="introleft"><tr><td class="introcell"><img id="introimage1" src="intro1.png"></td><td class="introcell"><b>选中的文本</b>会自动出现</td></tr></table>
+    <table class="introright"><tr><td class="introcellright"><p>输入时<b>显示搜索建议</b></p><p>按一个键<b>按键</b>或者<b>热键</b>去搜索</p><p>按住 Ctrl 在<b>新标签页</b>打开</p></td><td class="introcell"><img id="introimage2" src="intro2.png"></td></tr></table>
+    <table class="introleft"><tr><td class="introcell"><img id="introimage3" src="intro3.png"></td><td class="introcell"><b>高亮</b>搜索项目</td></tr></table>
+    <table class="introright"><tr><td class="introcell">在输入框右键添加<b>自定义搜索</b></td><td class="introcell"><img id="introimage4" src="intro4.png"></td><td class="introcell"><img id="introimage5" src="intro5.png"></td></tr></table>
+    <table class="introleft"><tr><td class="introcell"><img id="introimage6" src="intro6.png"></td><td class="introcell"><b>自定义</b>所有</td></tr></table>
+    <table class="introright"><tr><td class="introcellright">如果遇到任何问题，请先尝试刷新页面。<br>接下来，尝试在 Chrome 的扩展程序页面中禁用并重新启用 SearchBar 。<br>然后，前往“帮助/常见问题”查看常见问题解答或提交支持请求。</td></tr></table>
   </td>
   <td id="settings" class="settingsbar">
     <fieldset>
-      <legend>Display settings</legend>
-      <p class="advanced"><b>SearchBar preview:</b><br>
+      <legend>显示设置</legend>
+      <p class="advanced"><b>SearchBar 预览：</b><br>
         <span id="previewcontainer2"></span></p>
-      <p>Show SearchBar when I press this key combination: <input type="text" size="25" id="hotkeyshow" disabled><br>
-        <span class="advanced"><small> (to set a hotkey that will work from the New Tab page, select "Keyboard shortcuts" from the menu of Chrome's Extensions page)</small><br>
-        Hide SearchBar when I press this key combination <input type="radio" name="escfromanywhere" id="notescfromanywhere" value="false" disabled> <label for="notescfromanywhere">into SearchBar</label> <input type="radio" name="escfromanywhere" id="escfromanywhere" value="true" disabled> <label for="escfromanywhere">from anywhere</label>: <input type="text" size="25" id="hotkeyhide" disabled><br>
-        <input type="checkbox" id="showonsessionstartup" disabled> <label for="showonsessionstartup">Show SearchBar at the start of my browsing session</label><br></span>
-        <input type="checkbox" id="notshowingremember" disabled> <label for="notshowingremember">Hide SearchBar when I go to a new page</label><br>
-        <span class="advanced"><input type="checkbox" id="notshowhideallatonce" disabled> <label for="notshowhideallatonce">Show and hide SearchBar on each page independently</label><br></span>
-        <input type="checkbox" id="showontextselection" disabled> <label for="showontextselection">Show SearchBar while I have text selected</label><span class="advanced"> &ndash; <input type="checkbox" id="showontextselectionexception"> <label for="showontextselectionexception">except for text in input fields</label><br>
-        <input type="checkbox" id="forcepopup" disabled> <label for="forcepopup">Always show SearchBar in a popup when I press the toolbar button</label><small> (certain features will be disabled)</small><br>
-        Prevent SearchBar from running (except in a popup) on these hostnames (one per line with <i>*</i> as a wildcard):<br>
+      <p>按下此组合键时显示 SearchBar：<input type="text" size="25" id="hotkeyshow" disabled><br>
+        <span class="advanced"><small>（要设置可在新标签页中使用的快捷键，请从 Chrome 扩展程序页面的菜单中选择“键盘快捷键”）</small><br>
+        按下此组合键时隐藏 SearchBar<input type="radio" name="escfromanywhere" id="notescfromanywhere" value="false" disabled> <label for="notescfromanywhere">SearchBar 内部</label> <input type="radio" name="escfromanywhere" id="escfromanywhere" value="true" disabled> <label for="escfromanywhere">任何位置</label>: <input type="text" size="25" id="hotkeyhide" disabled><br>
+        <input type="checkbox" id="showonsessionstartup" disabled> <label for="showonsessionstartup">在我的浏览会话开始时显示搜索栏</label><br></span>
+        <input type="checkbox" id="notshowingremember" disabled> <label for="notshowingremember">跳转到新页面时隐藏</label><br>
+        <span class="advanced"><input type="checkbox" id="notshowhideallatonce" disabled> <label for="notshowhideallatonce">独立显示和隐藏每个页面上的 SearchBar</label><br></span>
+        <input type="checkbox" id="showontextselection" disabled> <label for="showontextselection">当选中文本时显示 SearchBar</label><span class="advanced"> &ndash; <input type="checkbox" id="showontextselectionexception"> <label for="showontextselectionexception">排除输入框中的文本</label><br>
+        <input type="checkbox" id="forcepopup" disabled> <label for="forcepopup">按下工具栏按钮时，始终在弹出窗口中显示 SearchBar</label><small>（部分功能将被禁用）</small><br>
+        阻止 SearchBar 在以下主机名上运行（弹出窗口除外）（每行一个主机名，使用 <i>*</i> 作为通配符）：<br>
         &emsp;<textarea id="disablehostnames" rows="4" cols="50" disabled></textarea></span></p>
-      <p><b>Appearance:</b><br>
-        &emsp;Position SearchBar at the <input type="radio" name="position" id="positiontopleft" value="topleft" disabled> <label for="positiontopleft">top left</label> <input type="radio" name="position" id="positiontopright" value="topright" disabled> <label for="positiontopright">top right</label> <input type="radio" name="position" id="positionbottomleft" value="bottomleft" disabled> <label for="positionbottomleft">bottom left</label> <input type="radio" name="position" id="positionbottomright" value="bottomright" disabled> <label for="positionbottomright">bottom right</label><br>
-        <span class="advanced">&emsp;Order SearchBar <input type="radio" name="direction" id="directionltr" value="ltr" disabled> <label for="directionltr">from left to right</label> <input type="radio" name="direction" id="directionrtl" value="rtl" disabled> <label for="directionrtl">from right to left</label><br></span>
-        &emsp;Enlarge buttons by <input type="number" id="extrapixels" min="0" max="50" step="1" disabled> pixels<br>
-        <span class="advanced">&emsp;Widen input field by <input type="number" id="extraboxpixels" min="-200" max="1000" step="1" disabled> pixels<br>
-        &emsp;Display separators between custom searches as <input type="radio" name="separatorsaslinebreaks" id="notseparatorsaslinebreaks" value="false" disabled> <label for="notseparatorsaslinebreaks">vertical bars</label> <input type="radio" name="separatorsaslinebreaks" id="separatorsaslinebreaks" value="true" disabled> <label for="separatorsaslinebreaks">line breaks</label><br>
-        &emsp;<input type="checkbox" id="displayboxclear" disabled> <label for="displayboxclear">Display a cross for clearing the input field when entering a query</label><br>
-        &emsp;<input type="checkbox" id="displaycross" disabled> <label for="displaycross">Display the "hide SearchBar" button</label><br>
-        &emsp;<input type="checkbox" id="displayoptionspagelink" disabled> <label for="displayoptionspagelink">Display the link to this page</label><small> (there is always a link from Chrome's Extensions page)</small><br>
-        &emsp;<input type="checkbox" id="pinned" disabled> <label for="pinned">SearchBar displaces web pages</label><small> (may interfere with some web pages or overlap other toolbars)</small></span></p>
+      <p><b>外观：</b><br>
+        &emsp;SearchBar 显示位置<input type="radio" name="position" id="positiontopleft" value="topleft" disabled> <label for="positiontopleft">左上</label> <input type="radio" name="position" id="positiontopright" value="topright" disabled> <label for="positiontopright">右上</label> <input type="radio" name="position" id="positionbottomleft" value="bottomleft" disabled> <label for="positionbottomleft">左下</label> <input type="radio" name="position" id="positionbottomright" value="bottomright" disabled> <label for="positionbottomright">右下</label><br>
+        <span class="advanced">&emsp;SearchBar 排列顺序<input type="radio" name="direction" id="directionltr" value="ltr" disabled> <label for="directionltr">从左到右</label> <input type="radio" name="direction" id="directionrtl" value="rtl" disabled> <label for="directionrtl">从右到左</label><br></span>
+        &emsp;加大按钮<input type="number" id="extrapixels" min="0" max="50" step="1" disabled>像素<br>
+        <span class="advanced">&emsp;加宽输入框<input type="number" id="extraboxpixels" min="-200" max="1000" step="1" disabled>像素<br>
+        &emsp;自定义搜索之间的分隔符显示为<input type="radio" name="separatorsaslinebreaks" id="notseparatorsaslinebreaks" value="false" disabled> <label for="notseparatorsaslinebreaks">竖条</label> <input type="radio" name="separatorsaslinebreaks" id="separatorsaslinebreaks" value="true" disabled> <label for="separatorsaslinebreaks">换行符</label><br>
+        &emsp;<input type="checkbox" id="displayboxclear" disabled> <label for="displayboxclear">输入查询时，显示一个清除输入框的叉号</label><br>
+        &emsp;<input type="checkbox" id="displaycross" disabled> <label for="displaycross">显示“隐藏 SearchBar”按钮</label><br>
+        &emsp;<input type="checkbox" id="displayoptionspagelink" disabled> <label for="displayoptionspagelink">显示设置按钮</label><small>（Chrome 扩展程序页面上总会有一个链接）</small><br>
+        &emsp;<input type="checkbox" id="pinned" disabled> <label for="pinned">SearchBar 嵌入网页</label><small> （可能会干扰某些网页或与其他工具栏重叠）</small></span></p>
     </fieldset>
     <fieldset>
-      <legend>Features</legend>
-      <p><input type="checkbox" id="alwaysnewtab" disabled> <label for="alwaysnewtab">Open search results in a new tab by default</label><span class="advanced"><small> (does not affect hotkeys; press Ctrl or middle-click to toggle new tab)</small><br>
-        <input type="checkbox" id="alwaysforegroundtab" disabled> <label for="alwaysforegroundtab">Open new tabs in the foreground by default</label><small> (press Shift to toggle between foreground and background)</small><br>
-        <input type="checkbox" id="notsearchremember" disabled> <label for="notsearchremember">Clear SearchBar when I go to a new page</label><br>
-        <input type="checkbox" id="removewhitespace" disabled> <label for="removewhitespace">Remove leading and trailing whitespace from selected text</label></span></p>
-      <p><b>Search suggestions:</b><br>
-        &emsp;<input type="checkbox" id="sendsearchsuggestions" disabled> <label for="sendsearchsuggestions">Get search suggestions from Google</label><br>
-        &emsp;Use www.google<select id="searchsuggestionslocale" disabled></select><br>
-        <span class="advanced">&emsp;Display up to <input type="number" id="maximumnumberofsearchsuggestions" min="1" max="10" step="1" disabled> suggestions</span></p>
-      <p><b>Highlight search terms:</b><br>
-        &emsp;<input type="checkbox" id="displayhighlightbutton" disabled> <label for="displayhighlightbutton">Display button</label><br>
-        &emsp;Hotkey: <input type="text" size="25" id="hotkeyhighlight" disabled><button id="removehotkeyhighlight" disabled>remove</button><br>
-        <span class="advanced">&emsp;<input type="checkbox" id="nothighlightingremember" disabled> <label for="nothighlightingremember">Clear highlighting when I go to a new page</label><br>
-        &emsp;<b>Tip:</b> Use quotation marks to specify an exact phrase or a word fragment to be highlighted.</span></p>
-      <p><b>Find search terms in page:</b><br>
-        &emsp;<input type="checkbox" id="displayfindbuttons" disabled> <label for="displayfindbuttons">Enable buttons</label><br>
-        <span class="advanced">&emsp;Maximum number of buttons: <input type="number" min="1" max="100" step="1" id="maximumnumberoffindbuttons" disabled><br>
-        &emsp;<b>Tip:</b> Once you have used a button, press Space to use it again. Hold Shift to find the previous result.<br></span></p>
-      <table id="findbuttonhotkeystable" class="advanced"><thead><tr><th class="findbuttonhotkeysheader">Button</th><th class="findbuttonhotkeysheader">Find next hotkey</th><th class="findbuttonhotkeysheader">Find previous hotkey</th></tr></thead><tbody id="findbuttonhotkeys"></tbody></table>
-      <p class="advanced"><b>Detect normal searches:</b><br>
-        &emsp;<input type="checkbox" id="detect" disabled> <label for="detect">Attempt to detect normal searches and populate SearchBar with search terms</label><br>
-        &emsp;<input type="radio" name="detectprimary" id="detectprimary" value="true" disabled> <label for="detectprimary">Use the Search URL of my primary (leftmost) search (highlighted at the top of your custom searches)</label><br>
-        &emsp;<input type="radio" name="detectprimary" id="notdetectprimary" value="false" disabled> <label for="notdetectprimary">Use these Search URLs with %s in place of query (one per line)</label>:<br>
+      <legend>功能</legend>
+      <p><input type="checkbox" id="alwaysnewtab" disabled> <label for="alwaysnewtab">默认在新标签页打开搜索结果</label><span class="advanced"><small>（不影响快捷键；按 Ctrl 键或单击鼠标中键可切换新标签页）</small><br>
+        <input type="checkbox" id="alwaysforegroundtab" disabled> <label for="alwaysforegroundtab">默认前台打开新标签页</label><small>（按 Shift 键可在前台和后台之间切换）</small><br>
+        <input type="checkbox" id="notsearchremember" disabled> <label for="notsearchremember">进入新页面时清空 SearchBar</label><br>
+        <input type="checkbox" id="removewhitespace" disabled> <label for="removewhitespace">删除所选文本的前导和尾随空格</label></span></p>
+      <p><b>搜索建议：</b><br>
+        &emsp;<input type="checkbox" id="sendsearchsuggestions" disabled> <label for="sendsearchsuggestions">从  Google 获取搜索建议</label><br>
+        &emsp;使用 www.google<select id="searchsuggestionslocale" disabled></select><br>
+        <span class="advanced">&emsp;最多显示<input type="number" id="maximumnumberofsearchsuggestions" min="1" max="10" step="1" disabled>条建议</span></p>
+      <p><b>高亮搜索项目：</b><br>
+        &emsp;<input type="checkbox" id="displayhighlightbutton" disabled> <label for="displayhighlightbutton">显示按钮</label><br>
+        &emsp;热键：<input type="text" size="25" id="hotkeyhighlight" disabled><button id="removehotkeyhighlight" disabled>移除</button><br>
+        <span class="advanced">&emsp;<input type="checkbox" id="nothighlightingremember" disabled> <label for="nothighlightingremember">进入新页面时取消高亮</label><br>
+        &emsp;<b>提示：</b> 使用引号可以指定要突出显示的确切短语或单词片段。</span></p>
+      <p><b>在页面上搜索：</b><br>
+        &emsp;<input type="checkbox" id="displayfindbuttons" disabled> <label for="displayfindbuttons">显示按钮</label><br>
+        <span class="advanced">&emsp;按钮最大个数：<input type="number" min="1" max="100" step="1" id="maximumnumberoffindbuttons" disabled><br>
+        &emsp;<b>提示：</b>使用按钮后，按空格键可再次使用。按住 Shift 键可查找上一个结果。<br></span></p>
+      <table id="findbuttonhotkeystable" class="advanced"><thead><tr><th class="findbuttonhotkeysheader">按钮</th><th class="findbuttonhotkeysheader">查找下一个</th><th class="findbuttonhotkeysheader">查找上一个</th></tr></thead><tbody id="findbuttonhotkeys"></tbody></table>
+      <p class="advanced"><b>检测普通搜索：</b><br>
+        &emsp;<input type="checkbox" id="detect" disabled> <label for="detect">尝试检测普通搜索并使用搜索词填充 SearchBar</label><br>
+        &emsp;<input type="radio" name="detectprimary" id="detectprimary" value="true" disabled> <label for="detectprimary">使用主（最左侧）搜索的搜索网址（在自定义搜索顶部高亮显示）</label><br>
+        &emsp;<input type="radio" name="detectprimary" id="notdetectprimary" value="false" disabled> <label for="notdetectprimary">请使用以下搜索网址，并将查询内容替换为 %s（每行一个网址）</label>:<br>
         &emsp;&emsp;<textarea id="detectcustom" rows="4" cols="50" disabled></textarea><br>
-        &emsp;<input type="checkbox" id="detecttosearchhistory" disabled> <label for="detecttosearchhistory">Record detected search terms to my search history (if search recording is enabled)</label></p>
+        &emsp;<input type="checkbox" id="detecttosearchhistory" disabled> <label for="detecttosearchhistory">将检测到的搜索词记录到搜索历史记录中（如果已启用搜索记录功能）</label></p>
     </fieldset>
     <fieldset>
-      <legend>Search history<small> (automatically disabled in incognito mode)</small></legend>
-      <p><span class="advanced">Suggest up to <input type="number" id="maximumnumberofsearchhistorysuggestions" min="0" max="100" step="1" disabled> previous searches<br>
-        <b>Tip:</b> Hold Alt or Shift while pressing Up or Down to skip between search suggestions and previous searches.<br></span>
-        <input type="checkbox" id="disablesearchhistory" disabled> <label for="disablesearchhistory">Stop recording searches</label><br>
-        <span class="advanced">Edit search history:<br>
+      <legend>搜索历史记录<small>（在隐身模式下自动禁用）</small></legend>
+      <p><span class="advanced">建议最多 <input type="number" id="maximumnumberofsearchhistorysuggestions" min="0" max="100" step="1" disabled>条搜索记录<br>
+        <b>提示：</b>按住 Alt 或 Shift 键，同时按向上或向下键，可以在搜索建议和之前的搜索记录之间切换。<br></span>
+        <input type="checkbox" id="disablesearchhistory" disabled> <label for="disablesearchhistory">停止记录</label><br>
+        <span class="advanced">编辑搜索历史记录：<br>
         &emsp;<textarea id="searchhistory" rows="10" cols="50" disabled></textarea></span></p>
     </fieldset>
     <fieldset class="advanced">
-      <legend>Import/export settings</legend>
-      <p><b>Manual import/export:</b><br>
-      &emsp;Use this feature to change all of your settings at once. Not recommended to be edited manually.<br>
-      &emsp;Delete everything and click "Save changes" to reset to the default settings.<br>
-      <span id="portwarning">&emsp;<b>Warning:</b> Your settings exceed 65535 characters, which may prevent this feature from working. Reduce the size of your uploaded images to resolve this issue.<br></span>
-      &emsp;<button id="portselectall" disabled>Select all</button> <button id="portsavechanges" disabled>Save changes</button><br>
+      <legend>导入/导出设置</legend>
+      <p><b>手动导入/导出：</b><br>
+      &emsp;使用此功能可一次性更改所有设置。不建议手动编辑。<br>
+      &emsp;删除所有内容，然后单击“保存更改”以重置为默认设置。<br>
+      <span id="portwarning">&emsp;<b>警告：</b>您的设置超过了 65535 个字符，这可能会导致此功能无法正常工作。请减小上传图片的大小以解决此问题。<br></span>
+      &emsp;<button id="portselectall" disabled>选择全部</button> <button id="portsavechanges" disabled>保存更改</button><br>
       &emsp;<textarea id="porttext" rows="2" cols="50" disabled></textarea></p>
-      <p><b>Chrome sync:</b><br>
-      &emsp;If you are signed in to Chrome and have sync enabled, then you can save or restore your settings to or from your Google account.<br>
-      <span id="syncsavenotice">&emsp;<b>Unable to save:</b> <span id="syncsavenoticetext"></span><br></span>
-      <span id="syncrestorenotice">&emsp;<b>Unable to restore:</b> No settings saved in your Google account.<br></span>
-      &emsp;<button id="syncsave" disabled>Save to Google account</button> <button id="syncrestore" disabled>Restore from Google account</button>
+      <p><b>Chrome 同步：</b><br>
+      &emsp;如果您已登录 Chrome 并启用了同步功能，则可以将您的设置保存到 Google 帐户或从 Google 帐户恢复您的设置。<br>
+      <span id="syncsavenotice">&emsp;<b>无法保存：</b> <span id="syncsavenoticetext"></span><br></span>
+      <span id="syncrestorenotice">&emsp;<b>无法恢复：</b> 您的 Google 帐户中未保存任何设置。<br></span>
+      &emsp;<button id="syncsave" disabled>保存到 Google 帐户</button> <button id="syncrestore" disabled>从  Google 帐户恢复</button>
     </fieldset>
   </td>
   <td id="customsettings" class="settingsbar">
     <fieldset>
-      <legend>Custom searches</legend>
-      <p><b>SearchBar preview:</b><br>
+      <legend>自定义搜索</legend>
+      <p><b>SearchBar 预览：</b><br>
         <span id="previewcontainer3"></span></p>
-      <p>To add a new custom search, right-click on any search engine's input field and select "Add to SearchBar...".<br>
-        Alternatively, you can add custom searches manually via the advanced options.<br>
-        <button id="toggleadvanced">show advanced options</button></p>
-      <table id="custombuttons"><tr><th class="custombuttonsheader">Properties<br><small>(hover to view)</small></th><th class="custombuttonsheader">Description<br><small>&nbsp;</small></th><th class="custombuttonsheader">Home page URL<br><small>(see note below)</small></th><th class="custombuttonsheader">Search URL<br><small>with <i>%s</i> in place of query</small></th><th class="custombuttonsheader">Icon URI<br><small>(see note below)</small></th><th class="custombuttonsheader">Hotkey<br><small>(press cross to remove)</small></th><th class="custombuttonsheader">New tab hotkey<br><small>&ndash; background tab</small></th><th class="custombuttonsheader">New tab hotkey<br><small>&ndash; foreground tab</small></th></tr>
-        <tr id="newrow"><td class="custombuttoncell"><button id="newrowcreatenew" disabled>create new</button></td><td class="custombuttoncell"><input id="newrowinput1" disabled></td><td class="custombuttoncell"><input id="newrowinput2" disabled></td><td class="custombuttoncell"><input id="newrowinput3" disabled></td><td class="custombuttoncell"><input id="newrowinput4" disabled><button id="newrowfileinputbutton">upload</button><input id="newrowfileinput" type="file" accept="image/*" disabled></td><td class="custombuttoncell"><input id="newrowinput5" disabled><button id="newrowremovehotkey1" title="remove" class="removebutton" disabled><img src="delete.png" alt="remove" class="removebuttonimage"></button></td><td class="custombuttoncell"><input id="newrowinput6" value="" disabled><button id="newrowremovehotkey2" title="remove" class="removebutton" disabled><img src="delete.png" alt="remove" class="removebuttonimage"></button></td><td class="custombuttoncell"><input id="newrowinput7" value="" disabled><button id="newrowremovehotkey3" title="remove" class="removebutton" disabled><img src="delete.png" alt="remove" class="removebuttonimage"></button></td></tr></table>
-      <div id="notes"><h3 id="notesheading">Notes</h3>
-        <b>Description:</b>
-        <p class="note">This is displayed when you hover over a button.</p>
-        <b>Home page URL:</b>
-        <p class="note">This determines the page you will be sent to if you perform a search without a query. Please include the "http" portion of the URL.</p>
-        <p class="note">As with the Search URL, you can use <i>%h</i> to insert the host name of the current web page (e.g. for a WHOIS lookup), you can use <i>%u</i> to insert the full URL of the current web page (e.g. for an Internet Archive search), you can use the advanced <i>%{&lt;JavaScript expression&gt;}</i> syntax, and you can add "i:" to the start of a URL to force it to be opened in an incognito window.</p>
-        <b>Search URL:</b>
-        <p class="note">SearchBar will usually be able to detect this automatically when you add a custom search via the right-click method. When this is not possible, you can try to obtain the search URL manually by performing a search using a test query, such as "TEST", copying the URL from the address bar, and replacing any instances of your test query with "%s".</p>
-        <p class="note">As well as <i>%s</i>, you can also use <i>%h</i> to insert the host name of the current web page (e.g. for Google site search), and <i>%u</i> to insert the full URL of the current web page (e.g. for Google cache search).</p>
-        <p class="note">For more advanced substitutions, you can also use <i>%{&lt;JavaScript expression&gt;}</i>. The expression will have access to the variables <i>s</i>, <i>h</i> and <i>u</i> as well as standard built-in JavaScript objects and functions such as <i>JSON</i> and <i>encodeURIComponent</i>. The expression will be evaluated using <a href="https://github.com/browserify/static-eval">static-eval</a>. For example, to insert the encoded search query but with spaces replaced with underscores, use <i>%{encodeURIComponent(s.replace(/ /g,"_"))}</i>.</p>
-        <p class="note">For POST requests, you can use <i>??</i> in place of <i>?</i>.</p>
-        <p class="note">To force a URL to be opened in an incognito window, add "i:" to the start of the URL.</p>
-        <b>Icon URI:</b>
-        <p class="note">You might like to use a website's favicon for its button icon. This is often linked to in a &lt;link rel="shortcut icon"&gt; or &lt;link rel="icon"&gt; tag near the top of the home page's source. It may be accessible from "https://www.example.com/favicon.ico" or "https://www.google.com/s2/favicons?domain=www.example.com", with "www.example.com" replaced by the website's host name.</p>
-        <p class="note">Alternatively, you can use any image by using the "upload" feature to convert it to a data URI.</p>
-        <b>Hotkey:</b>
-        <p class="note">Your primary search (highlighted at the top of the table) can, if it is enabled, be performed using the Enter key. You can also have another hotkey for this search.</p></div>
+      <p>要添加新的自定义搜索，请右键单击任何搜索引擎的输入框，然后选择“添加到 SearchBar...”。<br>
+        或者，您也可以通过高级选项手动添加自定义搜索。<br>
+        <button id="toggleadvanced">显示高级选项</button></p>
+      <table id="custombuttons"><tr><th class="custombuttonsheader">属性<br><small>（鼠标悬停查看）</small></th><th class="custombuttonsheader">描述<br><small>&nbsp;</small></th><th class="custombuttonsheader">主页 URL<br><small>（见下方注释）</small></th><th class="custombuttonsheader">搜索 URL<br><small>用 <i>%s</i> 替换搜索词</small></th><th class="custombuttonsheader">图标 URI<br><small>（见下方注释）</small></th><th class="custombuttonsheader">热键<br><small>（按叉移除）</small></th><th class="custombuttonsheader">新标签页热键<br><small>&ndash; 后台标签页</small></th><th class="custombuttonsheader">新标签页热键<br><small>&ndash; 后台标签页</small></th></tr>
+        <tr id="newrow"><td class="custombuttoncell"><button id="newrowcreatenew" disabled>新建</button></td><td class="custombuttoncell"><input id="newrowinput1" disabled></td><td class="custombuttoncell"><input id="newrowinput2" disabled></td><td class="custombuttoncell"><input id="newrowinput3" disabled></td><td class="custombuttoncell"><input id="newrowinput4" disabled><button id="newrowfileinputbutton">上传</button><input id="newrowfileinput" type="file" accept="image/*" disabled></td><td class="custombuttoncell"><input id="newrowinput5" disabled><button id="newrowremovehotkey1" title="remove" class="removebutton" disabled><img src="delete.png" alt="remove" class="removebuttonimage"></button></td><td class="custombuttoncell"><input id="newrowinput6" value="" disabled><button id="newrowremovehotkey2" title="remove" class="removebutton" disabled><img src="delete.png" alt="remove" class="removebuttonimage"></button></td><td class="custombuttoncell"><input id="newrowinput7" value="" disabled><button id="newrowremovehotkey3" title="remove" class="removebutton" disabled><img src="delete.png" alt="remove" class="removebuttonimage"></button></td></tr></table>
+      <div id="notes"><h3 id="notesheading">注释</h3>
+        <b>描述：</b>
+        <p class="note">当您将鼠标悬停在按钮上时，就会显示此信息。</p>
+        <b>主页 URL：</b>
+        <p class="note">这将决定您在不输入查询词的情况下进行搜索时将被引导至的页面。请务必包含 URL 中的“http”部分。</p>
+        <p class="note">与搜索 URL 一样，您可以使用 <i>%h</i> 插入当前网页的主机名（例如，用于 WHOIS 查询），您可以使用 <i>%u</i> 插入当前网页的完整 URL（例如，用于 Internet Archive 搜索），您可以使用高级语法 <i>%{&lt;JavaScript 表达式&gt;}</i>，并且您可以在 URL 的开头添加“i:”以强制其在隐身窗口中打开。</p>
+        <b>搜索 URL：</b>
+        <p class="note">通常情况下，当您通过右键单击添加自定义搜索时，SearchBar 会自动检测到这一点。如果无法自动检测到，您可以尝试手动获取搜索 URL：使用测试查询（例如“TEST”）进行搜索，从地址栏复制 URL，并将所有出现的测试查询替换为“%s”。</p>
+        <p class="note">除了 <i>%s</i> 之外，您还可以使用 <i>%h</i> 插入当前网页的主机名（例如，用于 Google 网站搜索），使用 <i>%u</i> 插入当前网页的完整 URL（例如，用于 Google 缓存搜索）。</p>
+        <p class="note">对于更高级的替换，您还可以使用 <i>%{&lt;JavaScript 表达式&gt;}</i>。该表达式可以访问变量 <i>s</i>、<i>h</i> 和 <i>u</i>，以及标准的内置 JavaScript 对象和函数，例如 <i>JSON</i> 和 <i>encodeURIComponent</i>。该表达式将使用 <a href="https://github.com/browserify/static-eval">static-eval</a> 进行求值。例如，要插入编码后的搜索查询，但将空格替换为下划线，请使用 <i>%{encodeURIComponent(s.replace(/ /g,"_"))}</i>。</p>
+        <p class="note">对于 POST 请求，您可以使用 <i>??</i> 代替 <i>?</i>。</p>
+        <p class="note">要强制在隐身窗口中打开 URL，请在 URL 的开头添加“i:”。</p>
+        <b>图标 URI：</b>
+        <p class="note">您可能希望使用网站的 favicon 作为按钮图标。它通常通过 &lt;link rel="shortcut icon"&gt; 或 &lt;link rel="icon"&gt; 标签链接到首页源代码的顶部附近。您可以通过“https://www.example.com/favicon.ico”或“https://www.google.com/s2/favicons?domain=www.example.com”访问它，其中“www.example.com”应替换为网站的主机名。</p>
+        <p class="note">或者，您可以使用“上传”功能将任何图像转换为数据 URI。</p>
+        <b>热键：</b>
+        <p class="note">如果已启用，您可以使用 Enter 键执行主要搜索（表格顶部高亮显示）。您还可以为此搜索设置其他快捷键。</p></div>
     </fieldset>
   </td>
   <td id="help" class="settingsbar">
-    <h2>Support requests</h2>
-    <p>If you are experiencing a problem with SearchBar, have an idea for a new feature you'd like to be included, or have any question at all, then I would love to hear from you.</p>
-    <p>Click below to submit your question, suggestion or problem. I will try to get back to you quickly &ndash; please check back for my response.</p>
-    <p><b>Bug reports:</b> If you would like to report a bug, then please try to answer the following questions in your support request. This will help me reproduce, debug and ultimately fix the problem. Consider including screenshots using a service such as <a href="https://imgur.com/">Imgur</a>.</p>
+    <h2>支持请求</h2>
+    <p>如果您在使用搜索栏时遇到问题，或者有任何新功能建议，或者有任何其他疑问，欢迎随时联系我。</p>
+    <p>点击下方提交您的问题、建议或故障。我会尽快回复您，请稍后查看我的回复。</p>
+    <p><b>错误报告：</b>如果您想报告错误，请在您的支持请求中尽量回答以下问题。这将有助于我重现、调试并最终修复问题。</b>建议使用 Imgur 等服务提供屏幕截图。</p>
     <ol>
-      <li>What steps can be taken to reproduce the bug?</li>
-      <li>What is the expected behaviour, and what goes wrong?</li>
-      <li>Have you tried disabling and re-enabling SearchBar from Chrome's Extensions page, and refreshing the web page?</li>
-      <li>Do any error messages appear in the web page's console? To view this, press Ctrl+Shift+J from the web page.</li>
-      <li>Do any error messages appear in the background page's console? To view this, go to Chrome's Extensions page, enable "Developer mode", scroll down to SearchBar and click the "background page" link next to "Inspect views".</li>
-      <li>What settings have you changed from the default? Consider exporting your settings using the "Manual import/export" feature, available under "Advanced settings", and sharing them using a service such as <a href="https://pastebin.com/">Pastebin</a> (as they may too long to fit into a support request).</li>
-      <li>What other Chrome extensions do you have enabled?</li>
-      <li>Please include the following software version information (click to select): <span id="versioninfo"></span></li>
+      <li>重现此错误需要哪些步骤？</li>
+      <li>预期行为是什么？实际发生了什么？</li>
+      <li>您是否尝试过在 Chrome 扩展程序页面禁用并重新启用搜索栏，然后刷新网页？</li>
+      <li>网页控制台中是否显示任何错误消息？要查看控制台，请在网页中按 Ctrl+Shift+J。</li>
+      <li>后台页面控制台中是否显示任何错误消息？要查看后台页面控制台，请转到 Chrome 扩展程序页面，启用“开发者模式”，向下滚动到搜索栏，然后单击“检查视图”旁边的“后台页面”链接。</li>
+      <li>您更改了哪些默认设置？</li>请考虑使用“高级设置”下的“手动导入/导出”功能导出您的设置，并使用 <a href="https://pastebin.com/">Pastebin</a> 等服务分享这些设置（因为设置可能太长，无法放入支持请求中）。</li>
+      <li>您还启用了哪些其他 Chrome 扩展程序？</li>
+      <li>请提供以下软件版本信息（点击选择）：<span id="versioninfo"></span></li>
     </ol>
-    <p><a class="bigbutton" target="_blank" href="https://chrome.google.com/webstore/detail/searchbar/fjefgkhmchopegjeicnblodnidbammed/support">SearchBar support</a></p>
-    <h2 class="faqheader">Privacy policy</h2>
-    <p>SearchBar's privacy policy can be found <a target="_blank" href="https://drive.google.com/file/d/1wHTGo-jmEg3i2IijtN90WZ45hw4_JoQI/view">here</a>.</p>
-    <h2 class="faqheader">Frequently asked questions</h2>
-    <h3 class="faqheader">How do I add a particular search engine?</h3>
-    <p>The easiest way to do this is to right-click on the search engine's input field and select "Add to SearchBar...". Alternatively, you can add custom searches manually via the advanced options under "Custom searches".</p>
-    <h3 class="faqheader">How do I open search results in a new tab?</h3>
-    <p>Simply click the search button using the middle mouse button or holding the Ctrl key (just like for an ordinary link). To be able to open search results in a new tab by left-clicking, check the "Open search results in a new tab by default" checkbox.</p>
-    <p>You can also hold Ctrl while you are pressing a hotkey. Alternatively, you can specify your own new tab hotkeys via the advanced options under "Custom searches".</p>
-    <p>For your primary (leftmost) search (highlighted at the top of your custom searches), you can also press Ctrl+Enter.</p>
-    <h3 class="faqheader">How can I make SearchBar behave like a permanent toolbar?</h3>
-    <p>Consider some of the following possibilities, available under "Advanced settings": enabling "Show SearchBar at the start of my browsing session"; disabling "Hide SearchBar when I go to a new page"; disabling "Show and hide SearchBar on each page independently"; and enabling "SearchBar displaces web pages".</p>
-    <p>Unfortunately, it is not possible to display SearchBar next to the address bar, since all Chrome extensions are restricted to a single toolbar button.</p>
-    <h3 class="faqheader">How can I backup or transfer my settings to another computer?</h3>
-    <p>You can do this using either of the "Import/export settings" features under "Advanced settings". For the manual import/export, copy the text from the box and save it in a convenient location. Then, to restore your settings, paste the text into the box and click "Save changes". For Chrome sync, first make sure you are logged in to Chrome and have sync enabled. Then use the buttons to save and restore your settings to and from your Google account.</p>
-    <p>These features may not work if your settings take up too much space. The most common cause of this is large image uploads.</p>
-    <h3 class="faqheader">How do I perform two different searches at once?</h3>
-    <p>You can do this by setting a hotkey for one custom search to be the same as a new tab hotkey for another custom search. This can be done via the advanced options under "Custom searches".</p>
-    <h3 class="faqheader">How can I highlight an exact phrase made up of more than one word?</h3>
-    <p>Simply put the phrase inside quotation marks.</p>
-    <h3 class="faqheader">How do I get the hotkey for showing SearchBar to work on the New Tab page?</h3>
-    <p>SearchBar's hotkeys may not function on the New Tab page or on Chrome settings pages. However, you can set another hotkey by selecting "Keyboard shortcuts" from the menu of Chrome's Extensions page.</p>
-    <h3 class="faqheader">Why does SearchBar sometimes appear in a popup when I press the toolbar button?</h3>
-    <p>The full version of SearchBar uses content scripts and so cannot run on the New Tab page or on Chrome settings pages (such as this page). It will also not run on any hostnames you have specified under "Prevent SearchBar from running (except in a popup) on these hostnames", available under "Advanced settings". The "popup" version allows you to access the main features of SearchBar from these pages by using the toolbar button. However, features that interact with the web page, such as searching selected text and highlighting search terms, are disabled.</p>
-    <p>There is an option to always show SearchBar in a popup when the toolbar button is pressed, available under "Advanced settings". Occasionally the popup will appear even if you don't have this option selected and are on an ordinary web page on which you have allowed SearchBar to run. The most common reason for this is that the page has not yet finished loading.</p>
-    <h3 class="faqheader">Why does a small empty tooltip sometimes appear when I press the toolbar button?</h3>
-    <p>The most common reason for this is that SearchBar is still loading. Loading times can be a little longer when you first open SearchBar. Please be patient.</p>
-    <h3 class="faqheader">Why do most "javascript:" URLs no longer work?</h3>
-    <p>Previously, SearchBar allowed Home page URLs and Search URLs with the <i>javascript:</i> protocol. However, as of Manifest V3, Chrome extensions are no longer allowed execute arbitrary JavaScript supplied by the user. This is for improved security, as explained <a href="https://developer.chrome.com/docs/extensions/develop/migrate/improve-security#remove-remote-code">here</a>. For this reason, Home page URLs and Search URLs with the <i>javascript:</i> protocol no longer work in SearchBar, except for a few special URLs, such as <i>javascript:document.execCommand("copy")</i>, which triggers the clipboard copy action.</p>
-    <p>Because of this restriction, SearchBar now supports an advanced <i>%{&lt;JavaScript expression&gt;}</i> syntax in Search URLs and Home Page URLs, such as in <i>%{u.replace(/\/$/,"").replace(/\/[^\/]*$/,"").replace(/^[a-z-]*:\/$/,u)}</i> and <i>https://chrome.google.com/webstore/search/%{encodeURIComponent(s)}</i>. This syntax is explained in more detail in the notes of the advanced options under "Custom searches".</p>
-    <h3 class="faqheader">Why does SearchBar need to "access my data on all websites"?</h3>
-    <p>Chrome requires this permission to be asked for in order for SearchBar to be inserted onto every page. However, SearchBar does not change or use any of your data outside of its declared features. For more information, please see SearchBar's privacy policy, which can be found <a target="_blank" href="https://drive.google.com/file/d/1wHTGo-jmEg3i2IijtN90WZ45hw4_JoQI/view">here</a>.</p>
-    <h3 class="faqheader">How can I reset to the default settings?</h3>
-    <p>You can do this using the "Manual import/export" feature under "Advanced settings" by deleting everything and clicking "Save changes".</p>
-    <h3 class="faqheader">What inspired you to create such an amazing extension?</h3>
-    <p>This extension was borne out of personal frustration with Chrome's default search system and dissatisfaction with the features of similar extensions. I hope it improves your browsing experience as much as it has mine, and I would love to hear your feedback.</p>
+    <p><a class="bigbutton" target="_blank" href="https://chrome.google.com/webstore/detail/searchbar/fjefgkhmchopegjeicnblodnidbammed/support">SearchBar 支持</a></p>
+    <h2 class="faqheader">隐私政策</h2>
+    <p>SearchBar 的隐私政策可在 <a target="_blank" 中找到<a href="https://drive.google.com/file/d/1wHTGo-jmEg3i2IijtN90WZ45hw4_JoQI/view">此处</a>。</p>
+    <h2 class="faqheader">常见问题解答</h2>
+    <h3 class="faqheader">如何添加特定搜索引擎？</h3>
+    <p>最简单的方法是右键单击搜索引擎的输入框，然后选择“添加到搜索栏...”。或者，您也可以通过“自定义搜索”下的高级选项手动添加自定义搜索。</p>
+    <h3 class="faqheader">如何在新的标签页中打开搜索结果？</h3>
+    <p>只需使用鼠标中键或按住 Ctrl 键单击搜索按钮（就像单击普通链接一样）。要通过左键单击在新的标签页中打开搜索结果，请选中“默认在新标签页中打开搜索结果”复选框。</p>
+    <p>您也可以在按下快捷键的同时按住 Ctrl 键。或者，您可以通过“自定义搜索”下的高级选项指定自己的新标签页快捷键。</p>
+    <p>对于您的主搜索（最左侧的搜索，在自定义搜索顶部高亮显示），您还可以按 Ctrl+Enter。</p>
+    <h3 class="faqheader">如何使搜索栏像永久工具栏一样工作？</h3>
+    <p>您可以考虑以下“高级设置”中的一些选项：启用“在浏览会话开始时显示搜索栏”；禁用“转到新页面时隐藏搜索栏”；禁用“在每个页面上独立显示和隐藏搜索栏”。并启用“搜索栏会遮挡网页”。</p>
+    <p>很遗憾，由于所有 Chrome 扩展程序都限制为仅使用一个工具栏按钮，因此无法将搜索栏显示在地址栏旁边。</p>
+    <h3 class="faqheader">如何备份或将我的设置传输到另一台计算机？</h3>
+    <p>您可以使用“高级设置”下的“导入/导出设置”功能来完成此操作。对于手动导入/导出，请复制框中的文本并将其保存到方便的位置。然后，要恢复您的设置，请将文本粘贴到框中并单击“保存更改”。对于 Chrome 同步，请先确保您已登录 Chrome 并启用同步功能。然后使用按钮将您的设置保存到您的 Google 帐户并从中恢复。</p>
+    <p>如果您的设置占用空间过大，这些功能可能无法正常工作。</p>最常见的原因是上传了过大的图片。</p>
+    <h3 class="faqheader">如何同时执行两个不同的搜索？</h3>
+    <p>您可以将一个自定义搜索的快捷键设置为与另一个自定义搜索的新标签页快捷键相同。这可以在“自定义搜索”下的高级选项中进行设置。</p>
+    <h3 class="faqheader">如何高亮显示由多个单词组成的精确短语？</h3>
+    <p>只需将短语放在引号内即可。</p>    
+    <h3 class="faqheader">如何在新标签页中使用显示搜索栏的热键？</h3>
+    <p>搜索栏的热键在新标签页或 Chrome 设置页面可能无法使用。不过，您可以从 Chrome 扩展程序页面的菜单中选择“键盘快捷键”来设置其他热键。</p>
+    <h3 class="faqheader">为什么我按下工具栏按钮时，搜索栏有时会以弹出窗口的形式出现？</h3>
+    <p>完整版的搜索栏使用内容脚本，因此无法在新标签页或 Chrome 设置页面（例如此页面）上运行。它也无法在您于“高级设置”下的“阻止搜索栏在这些主机名上运行（弹出窗口除外）”中指定的任何主机名上运行。“弹出窗口”版本允许您通过工具栏按钮从这些页面访问搜索栏的主要功能。</p>但是，与网页交互的功能，例如搜索选定文本和高亮显示搜索词，已被禁用。</p>
+    <p>在“高级设置”中，有一个选项可以在按下工具栏按钮时始终以弹出窗口的形式显示搜索栏。有时，即使您未选择此选项，并且在已允许搜索栏运行的普通网页上，弹出窗口也会出现。最常见的原因是页面尚未加载完成。</p>
+    <h3 class="faqheader">为什么我按下工具栏按钮时有时会出现一个空白的小提示？</h3>
+    <p>最常见的原因是搜索栏仍在加载。首次打开搜索栏时，加载时间可能会稍长一些。</p>请耐心等待。</p>
+    <h3 class="faqheader">为什么大多数“javascript:”URL 不再有效？</h3>
+    <p>以前，搜索栏允许使用 <i>javascript:</i> 协议的主页 URL 和搜索 URL。但是，从 Manifest V3 开始，Chrome 扩展程序不再允许执行用户提供的任意 JavaScript 代码。这是为了提高安全性，详情请参阅<a href="https://developer.chrome.com/docs/extensions/develop/migrate/improve-security#remove-remote-code">此处</a>。</p>因此，除了少数特殊 URL（例如 `javascript:document.execCommand("copy")`）会触发剪贴板复制操作外，带有 `<i>javascript:</i>` 协议的首页 URL 和搜索 URL 在搜索栏中不再有效。</p>
+    <p>由于此限制，搜索栏现在支持在搜索 URL 和首页 URL 中使用高级的 `%{&lt;JavaScript expression&gt;}</i>` 语法，例如 `%{u.replace(/\/$/,"").replace(/\/[^\/]*$/,"").replace(/^[a-z-]*:\/$/,u)}</i>` 和 `https://chrome.google.com/webstore/search/%{encodeURIComponent(s)}</i>`。此语法在“自定义搜索”下的高级选项说明中有更详细的解释。</p>
+    <h3 class="faqheader">为什么 SearchBar 需要“访问我在所有网站上的数据”？</h3>
+    <p>Chrome 需要请求此权限才能将 SearchBar 插入到每个页面。但是，SearchBar 不会在其声明的功能之外更改或使用您的任何数据。</p>更多信息，请参阅 SearchBar 的隐私权政策，您可以<a target="_blank" href="https://drive.google.com/file/d/1wHTGo-jmEg3i2IijtN90WZ45hw4_JoQI/view">此处</a>查看。</p>
+    <h3 class="faqheader">如何重置为默认设置？</h3>
+    <p>您可以使用“高级设置”下的“手动导入/导出”功能，删除所有内容并点击“保存更改”即可。</p>
+    <h3 class="faqheader">是什么启发您创建了如此出色的扩展程序？</h3>
+    <p>这款扩展程序源于我对 Chrome 默认搜索系统的个人不满，以及对类似扩展程序功能的失望。我希望它能像改善我的浏览体验一样改善您的浏览体验，也期待您的反馈。</p>
   </td>
   <td id="support" class="settingsbar">
     <img id="jacob" src="jacob.jpg">
-    <p>Hi, I'm Jacob, the author of SearchBar.</p>
-    <p>SearchBar is completely free, even though it has taken a lot of work to develop.</p>
-    <p>If you have found SearchBar valuable, then please consider helping me out in one of the following ways.</p>
-    <h2 id="afterjacob">Sponsor SearchBar and activate the bonus settings!</h2>
+    <p>大家好，我是 SearchBar 的作者 Jacob。</p>
+    <p>SearchBar 完全免费，尽管开发它花费了我大量精力。</p>
+    <p>如果您觉得 SearchBar 对您有帮助，请考虑通过以下方式支持我。</p>
+    <h2 id="afterjacob">赞助 SearchBar 并激活奖励设置！</h2>
     <a id="amfbiglink" target="_blank" href="https://bit.ly/searchbar02"><img id="amfbiglogo" src="logo_AMF.gif"></a>
-    <p>Please sponsor SearchBar by clicking below to donate to the Against Malaria Foundation.</p>
-    <p><a id="amfbuttonlink" class="bigbutton" target="_blank" href="https://bit.ly/searchbar01">Sponsor SearchBar</a></p>
-    <p>I have chosen to support the Against Malaria Foundation because they are considered to be an extremely cost-effective charity by charity evaluators <a target="_blank" href="https://www.givingwhatwecan.org/">Giving What We Can</a> and <a target="_blank" href="https://www.givewell.org/">GiveWell</a>.</p>
-    <p>As a small thank you for your donation, please feel free to activate the bonus settings after sponsoring SearchBar by any amount.</p>
+    <p>请点击下方链接赞助 SearchBar，向抗击疟疾基金会捐款。</p>
+    <p><a id="amfbuttonlink" class="bigbutton" target="_blank" href="https://bit.ly/searchbar01">赞助 SearchBar</a></p>
+    <p>我已选择支持抗击疟疾基金会。</p>疟疾基金会被慈善机构评估机构<a target="_blank" href="https://www.givingwhatwecan.org/">Giving What We Can</a>和<a target="_blank" href="https://www.givewell.org/">GiveWell</a>认为是一家性价比极高的慈善机构。</p>
+    <p>为了感谢您的捐赠，如果您在赞助SearchBar后（金额不限）想要激活奖励设置，请随意。</p>
     <table><tr><td class="supportcell">
-      <h2>Spread the word</h2>
+      <h2>广而告之</h2>
       <p id="spreadtheword"></p>
     </td><td class="supportcell">
-      <h2>Rate and review</h2>
-      <p><a target="_blank" href="https://chrome.google.com/webstore/detail/searchbar/fjefgkhmchopegjeicnblodnidbammed/reviews"><img class="centredpicture" src="star.png"><img class="centredpicture" src="star.png"><img class="centredpicture" src="star.png"><img class="centredpicture" src="star.png"><img class="centredpicture" src="star.png"></a> You can rate and review SearchBar <a target="_blank" href="https://chrome.google.com/webstore/detail/searchbar/fjefgkhmchopegjeicnblodnidbammed/reviews">here</a>.<br><small>(The place for bug reports, questions and feature suggestions is <a target="_blank" href="https://chrome.google.com/webstore/detail/searchbar/fjefgkhmchopegjeicnblodnidbammed/support">here</a>.)</small></p>
+      <h2>评分和评论</h2>
+      <p><a target="_blank" href="https://chrome.google.com/webstore/detail/searchbar/fjefgkhmchopegjeicnblodnidbammed/reviews"><img class="centredpicture" src="star.png"><img class="centredpicture" src="star.png"><img class="centredpicture" src="star.png"><img class="centredpicture" src="star.png"><img class="centredpicture" src="star.png"></a>您可以对 SearchBar 进行评分和评论在<a target="_blank" href="https://chrome.google.com/webstore/detail/searchbar/fjefgkhmchopegjeicnblodnidbammed/reviews">这里</a>。<br><small>（提交错误报告、问题和功能建议在<a target="_blank" href="https://chrome.google.com/webstore/detail/searchbar/fjefgkhmchopegjeicnblodnidbammed/support">这里</a>。)</small></p>
     </td></tr></table>
   </td>
   <td id="bonussettings" class="settingsbar">
     <div id="bonussettingspleasesponsor">
-      <p>The bonus settings allow you to change the background colors used by SearchBar.</p>
-      <p>Before activating them, please sponsor SearchBar by clicking below to donate to the Against Malaria Foundation.</p>
-      <p>You may choose to donate any amount that you feel appropriately reflects the value of SearchBar to you.</p>
-      <p>If you have already sponsored SearchBar, then please click below to confirm that your donation was successful.</p>
-      <p><a id="amfactivatelink" class="bigbutton" target="_blank" href="https://bit.ly/searchbar0">Sponsor SearchBar</a></p>
+      <p>额外设置允许您更改 SearchBar 的背景颜色。</p>
+      <p>在启用这些设置之前，请点击下方链接，向抗击疟疾基金会捐款，以支持 SearchBar。</p>
+      <p>您可以根据 SearchBar 对您的价值，选择合适的捐款金额。</p>
+      <p>如果您已经支持 SearchBar，请点击下方链接确认捐款成功。</p>
+      <p><a id="amfactivatelink" class="bigbutton" target="_blank" href="https://bit.ly/searchbar0">支持 SearchBar</a></p>
     </div>
     <div id="bonussettingsthankyousponsor">
-      <p>Once you have sponsored SearchBar, please click below to activate the bonus settings.</p>
-      <p>Although there is nothing to stop you clicking without donating, I am trusting you to have made a donation.</p>
-      <p><a id="bonussettingsactivatebutton" class="bigbutton">Activate bonus settings</a></p>
-      <p><a class="bigbutton" target="_blank" href="https://bit.ly/searchbar04">Sponsor SearchBar again</a></p>
+      <p>赞助 SearchBar 后，请点击下方链接激活额外设置。</p>
+      <p>虽然您可以点击而不捐款，但我相信您已经捐款。</p>
+      <p><a id="bonussettingsactivatebutton" class="bigbutton">激活额外设置</a></p>
+      <p><a class="bigbutton" target="_blank" href="https://bit.ly/searchbar04">再次赞助 SearchBar</a></p>
     </div>
     <div id="bonussettingsthankyouverymuchsponsor">
-      <p>You have activated the bonus settings. Thank you for sponsoring SearchBar!</p>
-      <p><a class="bigbutton" target="_blank" href="https://bit.ly/searchbar05">Sponsor SearchBar again</a></p>
+      <p>您已激活额外设置。感谢您赞助 SearchBar！</p>
+      <p><a class="bigbutton" target="_blank" href="https://bit.ly/searchbar05">再次赞助 SearchBar</a></p>
     </div>
     <div id="bonussettingsoverlaywrapper">
       <div id="bonussettingsoverlay"></div>
       <fieldset id="bonussettingsfieldset">
-        <legend>Bonus settings</legend>
-        <p><b>SearchBar preview:</b><br>
+        <legend>额外设置</legend>
+        <p><b>SearchBar 预览：</b><br>
           <span id="previewcontainer4"></span></p>
-        <p>Use this background color: <input type="color" id="searchbarbackgroundcolour" value="#e0e0e0" disabled><button id="searchbarbackgroundcolourreset" disabled>reset</button><br>
-        For buttons <input type="radio" name="buttonbackgrounddefault" id="buttonbackgrounddefault" value="true" disabled> <label for="buttonbackgrounddefault">use the default background style</label> <input type="radio" name="buttonbackgrounddefault" id="notbuttonbackgrounddefault" value="false" disabled> <label for="notbuttonbackgrounddefault">use this background color instead:</label> <input type="color" id="buttonbackgroundcolour" value="#f0f0f0" disabled><button id="buttonbackgroundcolourreset" disabled>reset</button></p>
+        <p>使用此背景颜色：<input type="color" id="searchbarbackgroundcolour" value="#e0e0e0" disabled><button id="searchbarbackgroundcolourreset" disabled>重置</button><br>
+        对于按钮：<input type="radio" name="buttonbackgrounddefault" id="buttonbackgrounddefault" value="true" disabled> <label for="buttonbackgrounddefault">使用默认背景样式</label> <input type="radio" name="buttonbackgrounddefault" id="notbuttonbackgrounddefault" value="false" disabled> <label for="notbuttonbackgrounddefault">改用此背景颜色：</label> <input type="color" id="buttonbackgroundcolour" value="#f0f0f0" disabled><button id="buttonbackgroundcolourreset" disabled>重置</button></p>
       </fieldset>
     </div>
   </td></tr></table>

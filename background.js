@@ -523,7 +523,7 @@ setTimeout(removepopups,2500);
 chrome.runtime.onInstalled.addListener(function(){
   chrome.contextMenus.create({
     "id":"addtosearchbar",
-    "title":"Add to SearchBar...",
+    "title":"添加到 SearchBar...",
     "contexts":["editable"],
     "documentUrlPatterns":["http://*/*","https://*/*"]
   });

@@ -917,7 +917,7 @@
             if(searchterms.length>0){
               for(var i=0;i<Math.min(settings.maximumnumberoffindbuttons,searchterms.length);i++){
                 findbuttons[i]=document.createElement("button");
-                findbuttons[i].title="find in page"+(i<settings.findbuttonhotkeys.length?(settings.findbuttonhotkeys[i][0][0]===false?"":(" ("+hotkeytotext(settings.findbuttonhotkeys[i][0])+")")):"");
+                findbuttons[i].title="在网页里查找"+(i<settings.findbuttonhotkeys.length?(settings.findbuttonhotkeys[i][0][0]===false?"":(" ("+hotkeytotext(settings.findbuttonhotkeys[i][0])+")")):"");
                 findbuttons[i].style.display="inline-block";
                 findbuttons[i].style.height=26+settings.extrapixels+"px";
                 findbuttons[i].style.width="auto";
@@ -972,7 +972,7 @@
             event.preventDefault();
           });
           optionspagelink.target="_blank";
-          optionspagelink.title="Options/Help";
+          optionspagelink.title="选项/帮助";
           optionspagelink.separator=document.createElement("span");
           cssreset(optionspagelink.separator);
           optionspagelink.separator.appendChild(document.createTextNode(" | "));
@@ -1361,14 +1361,14 @@
             box.type=settings.displayboxclear?"search":"text";
             box.style.width=250+settings.extrapixels*4+settings.extraboxpixels+"px";
             box.style.font=16+settings.extrapixels+"px sans-serif";
-            cross.title="hide SearchBar"+(settings.hotkeys.hide[0]===false?"":(" ("+hotkeytotext(settings.hotkeys.hide)+")"));
+            cross.title="隐藏 SearchBar"+(settings.hotkeys.hide[0]===false?"":(" ("+hotkeytotext(settings.hotkeys.hide)+")"));
             cross.style.display=settings.displaycross?"inline-block":"none";
             images[0].alt="x";
             for(var i=0;i<settings.custombuttons.length;i++){
               createbutton(i+2,settings.custombuttons[i][0],settings.custombuttons[i][2],settings.custombuttons[i][3],settings["i"+(i+1).toString()],settings.custombuttons[i][4],settings.custombuttons[i][5]);
             }
             highlightorfindseparator.style.display=settings.displayhighlightbutton?"inline":"none";
-            buttons[1].title="highlight search terms"+(settings.hotkeys.highlight[0]===false?"":(" ("+hotkeytotext(settings.hotkeys.highlight)+")"));
+            buttons[1].title="高亮搜索项目"+(settings.hotkeys.highlight[0]===false?"":(" ("+hotkeytotext(settings.hotkeys.highlight)+")"));
             buttons[1].style.display=settings.displayhighlightbutton?"inline-block":"none";
             images[1].alt="highlight";
             findbuttonsdiv.style.display=settings.displayfindbuttons?"inline-block":"none";
