@@ -242,9 +242,9 @@ a.bigbutton:active{
     <p id="supportlink" class="sidebarlink">支持 SearchBar</p>
     <p id="bonuslink" class="sidebarlink">附加设置</p></td>
   <td id="intro" class="settingsbar">
-    <table class="introright"><tr><td class="introcell">按 <b id="hotkeyshowmirror"></b> 在网页打开 SearchBar</td><td class="introcellleft"><div id="previewcontainer1"><span id="searchbarpreview"></span></div></td></tr></table>
+    <table class="introright"><tr><td class="introcell">按 <b id="hotkeyshowmirror"></b> 在页面上打开 SearchBar</td><td class="introcellleft"><div id="previewcontainer1"><span id="searchbarpreview"></span></div></td></tr></table>
     <table class="introleft"><tr><td class="introcell"><img id="introimage1" src="intro1.png"></td><td class="introcell"><b>选中的文本</b>会自动出现</td></tr></table>
-    <table class="introright"><tr><td class="introcellright"><p>输入时<b>显示搜索建议</b></p><p>按一个键<b>按键</b>或者<b>热键</b>去搜索</p><p>按住 Ctrl 在<b>新标签页</b>打开</p></td><td class="introcell"><img id="introimage2" src="intro2.png"></td></tr></table>
+    <table class="introright"><tr><td class="introcellright"><p>输入时<b>显示搜索建议</b></p><p>通过一个<b>按键</b>或者<b>热键</b>触发搜索</p><p>按住 Ctrl 在<b>新标签页</b>打开</p></td><td class="introcell"><img id="introimage2" src="intro2.png"></td></tr></table>
     <table class="introleft"><tr><td class="introcell"><img id="introimage3" src="intro3.png"></td><td class="introcell"><b>高亮</b>搜索项目</td></tr></table>
     <table class="introright"><tr><td class="introcell">在输入框右键添加<b>自定义搜索</b></td><td class="introcell"><img id="introimage4" src="intro4.png"></td><td class="introcell"><img id="introimage5" src="intro5.png"></td></tr></table>
     <table class="introleft"><tr><td class="introcell"><img id="introimage6" src="intro6.png"></td><td class="introcell"><b>自定义</b>所有</td></tr></table>
@@ -334,7 +334,7 @@ a.bigbutton:active{
       <p>要添加新的自定义搜索，请右键单击任何搜索引擎的输入框，然后选择“添加到 SearchBar...”。<br>
         或者，您也可以通过高级选项手动添加自定义搜索。<br>
         <button id="toggleadvanced">显示高级选项</button></p>
-      <table id="custombuttons"><tr><th class="custombuttonsheader">属性<br><small>（鼠标悬停查看）</small></th><th class="custombuttonsheader">描述<br><small>&nbsp;</small></th><th class="custombuttonsheader">主页 URL<br><small>（见下方注释）</small></th><th class="custombuttonsheader">搜索 URL<br><small>用 <i>%s</i> 替换搜索词</small></th><th class="custombuttonsheader">图标 URI<br><small>（见下方注释）</small></th><th class="custombuttonsheader">热键<br><small>（按叉移除）</small></th><th class="custombuttonsheader">新标签页热键<br><small>&ndash; 后台标签页</small></th><th class="custombuttonsheader">新标签页热键<br><small>&ndash; 后台标签页</small></th></tr>
+      <table id="custombuttons"><tr><th class="custombuttonsheader">属性<br><small>（鼠标悬停查看）</small></th><th class="custombuttonsheader">描述<br><small>&nbsp;</small></th><th class="custombuttonsheader">主页 URL<br><small>（见下方注释）</small></th><th class="custombuttonsheader">搜索 URL<br><small>用 <i>%s</i> 替换搜索词</small></th><th class="custombuttonsheader">图标 URI<br><small>（见下方注释）</small></th><th class="custombuttonsheader">热键<br><small>（按叉键移除）</small></th><th class="custombuttonsheader">新标签页热键<br><small>&ndash; 后台标签页</small></th><th class="custombuttonsheader">新标签页热键<br><small>&ndash; 前台标签页</small></th></tr>
         <tr id="newrow"><td class="custombuttoncell"><button id="newrowcreatenew" disabled>新建</button></td><td class="custombuttoncell"><input id="newrowinput1" disabled></td><td class="custombuttoncell"><input id="newrowinput2" disabled></td><td class="custombuttoncell"><input id="newrowinput3" disabled></td><td class="custombuttoncell"><input id="newrowinput4" disabled><button id="newrowfileinputbutton">上传</button><input id="newrowfileinput" type="file" accept="image/*" disabled></td><td class="custombuttoncell"><input id="newrowinput5" disabled><button id="newrowremovehotkey1" title="remove" class="removebutton" disabled><img src="delete.png" alt="remove" class="removebuttonimage"></button></td><td class="custombuttoncell"><input id="newrowinput6" value="" disabled><button id="newrowremovehotkey2" title="remove" class="removebutton" disabled><img src="delete.png" alt="remove" class="removebuttonimage"></button></td><td class="custombuttoncell"><input id="newrowinput7" value="" disabled><button id="newrowremovehotkey3" title="remove" class="removebutton" disabled><img src="delete.png" alt="remove" class="removebuttonimage"></button></td></tr></table>
       <div id="notes"><h3 id="notesheading">注释</h3>
         <b>描述：</b>
@@ -428,26 +428,26 @@ a.bigbutton:active{
   </td>
   <td id="bonussettings" class="settingsbar">
     <div id="bonussettingspleasesponsor">
-      <p>额外设置允许您更改 SearchBar 的背景颜色。</p>
+      <p>附加设置允许您更改 SearchBar 的背景颜色。</p>
       <p>在启用这些设置之前，请点击下方链接，向抗击疟疾基金会捐款，以支持 SearchBar。</p>
       <p>您可以根据 SearchBar 对您的价值，选择合适的捐款金额。</p>
       <p>如果您已经支持 SearchBar，请点击下方链接确认捐款成功。</p>
       <p><a id="amfactivatelink" class="bigbutton" target="_blank" href="https://bit.ly/searchbar0">支持 SearchBar</a></p>
     </div>
     <div id="bonussettingsthankyousponsor">
-      <p>赞助 SearchBar 后，请点击下方链接激活额外设置。</p>
+      <p>赞助 SearchBar 后，请点击下方链接激活附加设置。</p>
       <p>虽然您可以点击而不捐款，但我相信您已经捐款。</p>
-      <p><a id="bonussettingsactivatebutton" class="bigbutton">激活额外设置</a></p>
+      <p><a id="bonussettingsactivatebutton" class="bigbutton">激活附加设置</a></p>
       <p><a class="bigbutton" target="_blank" href="https://bit.ly/searchbar04">再次赞助 SearchBar</a></p>
     </div>
     <div id="bonussettingsthankyouverymuchsponsor">
-      <p>您已激活额外设置。感谢您赞助 SearchBar！</p>
+      <p>您已激活附加设置。感谢您赞助 SearchBar！</p>
       <p><a class="bigbutton" target="_blank" href="https://bit.ly/searchbar05">再次赞助 SearchBar</a></p>
     </div>
     <div id="bonussettingsoverlaywrapper">
       <div id="bonussettingsoverlay"></div>
       <fieldset id="bonussettingsfieldset">
-        <legend>额外设置</legend>
+        <legend>附加设置</legend>
         <p><b>SearchBar 预览：</b><br>
           <span id="previewcontainer4"></span></p>
         <p>使用此背景颜色：<input type="color" id="searchbarbackgroundcolour" value="#e0e0e0" disabled><button id="searchbarbackgroundcolourreset" disabled>重置</button><br>
