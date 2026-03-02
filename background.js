@@ -47,7 +47,9 @@ var defaultsettings={
     [false,false,[[false,false,false,false,false],[false,false,false,false,false],[false,false,false,false,false]],"go up","%{u.replace(/\\/$/,\"\").replace(/\\/[^\\/]*$/,\"\").replace(/^[a-z-]*:\\/$/,u)}","%{u.replace(/\\/$/,\"\").replace(/\\/[^\\/]*$/,\"\").replace(/^[a-z-]*:\\/$/,u)}"],
     [false,true,[[false,false,false,false,false],[false,false,false,false,false],[false,false,false,false,false]],"Incognito Google","i:https://www.google.com","i:https://www.google.com/search?q=%s"],
     [false,false,[[false,false,false,false,false],[false,false,false,false,false],[false,false,false,false,false]],"copy selection","javascript:document.execCommand(\"copy\")","javascript:document.execCommand(\"copy\")"],
-    [false,false,[[false,false,false,false,false],[false,false,false,false,false],[false,false,false,false,false]],"Chrome Web Store","https://chrome.google.com/webstore/","https://chrome.google.com/webstore/search/%{encodeURIComponent(s)}"]
+    [false,false,[[false,false,false,false,false],[false,false,false,false,false],[false,false,false,false,false]],"Chrome Web Store","https://chrome.google.com/webstore/","https://chrome.google.com/webstore/search/%{encodeURIComponent(s)}"],
+    [true,false,[[false,false,false,false,false],[false,false,false,false,false],[false,false,false,false,false]],"Bing","https://www.bing.com","https://www.bing.com/search?q=%s"], 
+    [true,false,[[false,false,false,false,false],[false,false,false,false,false],[false,false,false,false,false]],"Baidu","https://www.baidu.com","https://www.baidu.com/s?wd=%s"]
   ],
   "i1":"https://www.google.com/favicon.ico",
   "i2":"https://www.youtube.com/favicon.ico",
@@ -76,6 +78,8 @@ var defaultsettings={
   "i25":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAALGSURBVDhPjVNLTxNhFD19l1JKIkIggUKoVGkIjwDl2RieGxIeIQoajAR/gmwUjcQEMNG9BmSraNREXZAYVrATVpDYskHahJayINApnXam7XjvJ8SdepNpvt757rnnnnNHt76+rq2uriKdTuNPaNA0QKejEx0ymazIGgwGylGSwmQyYXh4CIb8fMfs6ekJksmkeBIJGZIkQZYTiMfjAthmsyE3NxfHx8f0PoFUiu+dif9GRVGgqqpAzWazMJstmLw7iUsFBeB3drsdRUVFovPCwjzC4bDozsHgev65AJGkOHNGY1MTPB4PamtrUVFRgZycHAHA7FKpFFRFFTUCQOVies6IbmHhZfT09IjZeRxxmYAzmQwxM8PpLBM5Ho9r0ioBKKoCKS7BWV6Oubl5DI+MIBaTREfufNGdqU9N3cP96WkYjUbISRlqWiENCDEpy0Jth8MhBNrc/I69vT1YLVayAgQYQ0lJCQYGBuDr9GHl7RuEdw7EKIYrrspZFi8cPkDk8BDV1R7U1NTA5XIhjwCLi4vR1tYGn++6cCPg92Nza4ss1cNkNkHX29utmUnVBw9nBDWmm5fnQDC4T9bZ6WwXiodCIexsb6PT50NdXT0eP5oh0WPQZzNp7O//xOulRVRVuYlBNYlZCL//B8ZujuLOxG0EAgG8f7eC3d0AvF4vvn75jLW1b0JsXUd7q3Z0FEVzsxe9fX0YHBwSu5Ah4I2NDUG7paVVqM9OhIJBTEzcIpdkNDQ0Qs803O6rePlqEV1d3Tg5ORULxer19/ejvb1DWMnj6fU8t5lGs/22mFzQJ5MJjI2PCwdKS8vIayesVquwj0G4iFlwjkHcbjdGR28IZ3gPjHwhGo3i08cPUM5X+m9hsVjEt2KgOt5G3TV3pRaJRMRasgP/Ct4Xts9COtXV10O3vLykvXj+jGZSzq/8X/CIT2af4hdol1iqZLCpuAAAAABJRU5ErkJggg==",
   "i26":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAJ2AAACdgBx6C5rQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAACVSURBVDiN3dOxDQIxDAXQx8EIQEvJEjAEBbceEuUhWIMRoGMHGACKu6ArkogoHV+K8mX5f9lOTCUmI75Di2kit40FmxE/YlVTzRv7UlETiS1xHwxj54ZFSJ5FDDZYS/SMDltcUgZhiKdM5d9Bx1oowp8ZtLiWGoxfITf1nwwCXsPdZXTPQGKL89Av2TwhPuOg/5X1+AD/qBWhDBwnPwAAAABJRU5ErkJggg==",
   "i27":"https://www.google.com/images/icons/product/chrome_web_store-32.png",
+  "i28":"https://www.bing.com/favicon.ico",
+  "i29":"https://www.baidu.com/favicon.ico",
   "detect":true,
   "detectprimary":true,
   "detectcustom":[],
