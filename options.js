@@ -269,7 +269,7 @@ window.addEventListener("load",function(){
       searchbar.style.cursor="default";
       searchbar.style.textAlign=settings.position[1];
       cross=document.createElement("button");
-      cross.title="hide SearchBar"+(settings.hotkeys.hide[0]===false?"":(" ("+hotkeytotext(settings.hotkeys.hide)+")"));
+      cross.title="隐藏 SearchBar"+(settings.hotkeys.hide[0]===false?"":(" ("+hotkeytotext(settings.hotkeys.hide)+")"));
       images[0]=document.createElement("img");
       images[0].src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH1gcHCyMfGLAkTgAAAppJREFUOMuVk0+LFFcUxX9V9aq63lhdXWVbTlrtDExpixsRe6Fgh2yCy3yCTAhGMTERQaMYNy7cuFARXLjwD6JrF4K4SPINzHJIoskMaMCJSXom092jVne9d7PoYaIEBO/m3LM498K55zpAAMSr+C41BHoKSM9XK59HjrPfdWh6MP02lYF5K/w+EPnudL+4oQAncpz9Hx+c+TDZWAdjwRrEGhDzX2/GXKydXvprcfrB3e8BbirAeg5b0qlNlH8/o+w+w1pBRLDWYldxzIVKLSHdnFHPki30/rBuu932XMjxPcyrJST0iQ+fwd3cxDDEyBCvOUX967PYiZCVlWUIFRVdydvttud2Oh0fQBBEIP70JOGufdRPXMRvbsV/fxvvnbrMut0fsPHgt5hyBGJBhE6n46tWqzV23xqsWHr3b1PfthN3IiI7cQkAdyLCvBiweO/W2ElrAWi1WoHK87zyBLD9lxRPuoxm53n19ACbLlzHq8Zj5/s95o59xsv5xxgRTL0BIuR5XnGzLAsBzNKA0UrBaFBgivJ/57NDw2hQUA4Kym4fKQ1ZloVukiQaQIYjrBX8fDvNK7fwqjGm38P0e3jVmK1X76BbO7ACUgyRUUmSJNqNokiveWAtGw58tSb+7cgMv345Q9nvoaoxjUNHERGwBkSIokgrrfUbA56eO02T8yxcu8KLxz8jIjw6/AmNQ0eZO3sKT3mrIQOttVZKKe1XqwtiTUOn6+n/+Zy5b46snVVEGPzyE4+Of4Ef+NTSGIxBQr2glNIqCIKwkqTdf7qLjVqaMlGLxxusQcxrUX4t0su9AUM/7AZBECrATu7ZO/vwx4dusbRYHy4vT77tmYJa7XklXd+d3LN3FrCOiEwBHwHr3vGdV4Af/gXVzUVdmatoKQAAAABJRU5ErkJggg==";
       images[0].alt="x";
@@ -300,7 +300,7 @@ window.addEventListener("load",function(){
         createbutton(i+2,settings.custombuttons[i][0],settings.custombuttons[i][3],settings["i"+(i+1).toString()]);
       }
       buttons[1]=document.createElement("button");
-      buttons[1].title="highlight search terms"+(settings.hotkeys.highlight[0]===false?"":(" ("+hotkeytotext(settings.hotkeys.highlight)+")"));
+      buttons[1].title="高亮搜索项目"+(settings.hotkeys.highlight[0]===false?"":(" ("+hotkeytotext(settings.hotkeys.highlight)+")"));
       buttons[1].highlighting="";
       images[1]=document.createElement("img");
       images[1].offsrc="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAAAmJLR0QA/4ePzL8AAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAHdElNRQfcCRsXDhJXcy0oAAAA8klEQVQoz23QMS9DURjG8d+5mlI0pDqIjQ8gEhGLkc5GH86nMTTpoEREDEgEW3WRDpXe+xp6W9V6z3KS53/+ed4jLJ5OPMbknsL8XEeusGo/YRG4jVyuQHKcyP7G96WaMNKNOeApcqEwttaN/AFeYqCYxisyD7PAW3wp5CVQsa6t9Qv047OMx/UarpzaSVTgK15LeQGa7hzYSyaGd0vT12z6wGEauzMYqquVP7fm27PzNOmWMYwVb1ZtoGrJjYuZ1bNR9K1repI01XWcqaVfIPViIJerurLlVassNzV0Lavqa9vWczQXU2m4NLJn10nyz/wAxclsa1wEXXAAAAAASUVORK5CYII=";
@@ -316,7 +316,7 @@ window.addEventListener("load",function(){
       cssreset(findbuttonsdiv);
       findbuttonsdiv.style.display="inline-block";
       findbuttons[1]=document.createElement("button");
-      findbuttons[1].title="find in page"+(settings.findbuttonhotkeys[0][0][0]===false?"":(" ("+hotkeytotext(settings.findbuttonhotkeys[0][0])+")"));
+      findbuttons[1].title="在页面里查找"+(settings.findbuttonhotkeys[0][0][0]===false?"":(" ("+hotkeytotext(settings.findbuttonhotkeys[0][0])+")"));
       findbuttons[1].style.display="inline-block";
       findbuttons[1].style.height=26+settings.extrapixels+"px";
       findbuttons[1].style.width="auto";
@@ -353,7 +353,7 @@ window.addEventListener("load",function(){
         images[i].style.verticalAlign=-2-settings.extrapixels/4+"px";
       }
       optionspagelink=document.createElement("a");
-      optionspagelink.title="Options/Help";
+      optionspagelink.title="选项/帮助";
       optionspageimage=document.createElement("img");
       optionspageimage.src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABmJLR0QA/wD/AP+gvaeTAAAEdUlEQVQ4jYWUbWxTVRjH/+fcc2/Xrmtvu64b61i7F2hhgyEEBkgREwhGRD4gkCAExIgxvCgkfhE+YIxi/ECUDyIOhaCJH1QIJG4YCeNNwOLAjZcxBmNrR9+7tWu7vtzeWz8oS4EFnuRJnic55/eck/8/D8FzYtGyreuqbNXbFUniPJ7BnRfaDpx71nn2PKDBIC5RieWzi3iGUDC0FMAzgbSwWbbmw1Vvbd171uncVgYAixbtYTq9pi6VkiDlFGi1mgbs2UMBYMnybS9tfO9T19IVO5yFDPKoeHn5ltUb169sMZSW6u509w52XOu8PH3a1LlDo/nK4NAoxzMeJh3LjgyH+gK+YM8ku92pcBojk0ceujo6V585sf/SY1/mZKlblhVZzilwTJlUNaNpyqpT528jGkuiiBdACDCSzAsqbYVjxuw6x1A0CTVPkYlnRhNU7hnjPCr6ejuCQvFEcebMxvn5PIisKJAlGfF4GjzjIDAGgXHgKEU2K0PFGLQqeeRGV9e77cf2d44rSjabjfOMQlaAXE5GIBiD3WaGLI0mOI5y4NTqQCgOSggoIVDxHE+JUlTI4AqbdzZ/cMBimVBOAPT2BWEu1aSuXnEddF24su5m960W5GWxwVHbkM0oVGAc7PUW3u/3W4rFmvaB+9eiAEDWbNy1c17zC2+KupIyi6ViAghjwXAc6bSErs7rJ7/6YvuKwqEf7z1ywWGfugB5oMpigMcbgd8biI+mEmHX39f306rKSmfT9MaZJnPFxGA4zQLBEXg8Q9AUMTzod1950mcP7rm7TEYtbNUmuN1DSMYk6LTGksm1jhqxRF/PvD5f7Po/t8MCrzEKKjVNJDIoEngwylBmNFifBNpqLVUVZj3u9viRy8go1nCK1+8NRCJSJJNJuwkALF68WS+UkDlzZ7/YYjZXWwkAnudAadp7/ETbqhO/7LsEAOs27X59w9qVR3VanX6gPwKecejq7uw81do27/Lln1NjKp8+/W0MwB/WqpoO+ySHNZ2SQAmBRmOoXL/2jdZXljj7OUqpzWqtqywv0wwPJVEk8FCrGQYGPRcfwZ6yzUC/77DUnHhNLWgFSgggAxxV6avLa5sIAXKjQCYlgREKtcCDEkWR07nIuLaZNWszv8DZeMRe57BSQqAS2JihGSVglENxsQqiQQOecZAlBTzliWjUTqaK+Fv3XVcYKFgO1jrdroXNc+fwhIKQbKbn/i2fVsNDp1VBLQhQq3gIjCEaied/bz9779a92w95FYc6q9VcbCrd8tQLeU57lTB+YU6RhOOtJ/cd/u7LTwLDSSUaixpmTGswIg+4bnT4D/34w/cHD322u6e3tzVPVE037/Tc+Obrj94GkHvSEdBXVxtstlkOADUAGgE0L311Q8tf53rzHecf5He8//mfAOYDaAJQD7XaAlEUC7V4TJSY2z0cgzsJQA0gBSARDHrPDHp9m0wmI/WFw30AAgDSAFJIpf7LghhvY2f/zxgA1NeInp9+PZZRFJIPhaIXAYTGuTMW/wLs+r0RwXE/QAAAAABJRU5ErkJggg==";
       optionspageimage.alt="Options";
@@ -426,8 +426,8 @@ window.addEventListener("load",function(){
             if(id=="show"){
               document.getElementById("hotkeyshowmirror").textContent=this.value;
             }
-            cross.title="hide SearchBar"+(settings.hotkeys.hide[0]===false?"":(" ("+hotkeytotext(settings.hotkeys.hide)+")"));
-            buttons[1].title="highlight search terms"+(settings.hotkeys.highlight[0]===false?"":(" ("+hotkeytotext(settings.hotkeys.highlight)+")"));
+            cross.title="隐藏 SearchBar"+(settings.hotkeys.hide[0]===false?"":(" ("+hotkeytotext(settings.hotkeys.hide)+")"));
+            buttons[1].title="高亮搜索项目"+(settings.hotkeys.highlight[0]===false?"":(" ("+hotkeytotext(settings.hotkeys.highlight)+")"));
             event.preventDefault();
           }
         };
@@ -440,7 +440,7 @@ window.addEventListener("load",function(){
         "hotkeys":settings.hotkeys
       },storageseterrorhandler);
       document.getElementById("hotkeyhighlight").value="";
-      buttons[1].title="highlight search terms";
+      buttons[1].title="高亮搜索项目";
     });
     document.getElementById("hotkeyshowmirror").textContent=document.getElementById("hotkeyshow").value;
     var checkboxsettings=["showonsessionstartup","showontextselection","showontextselectionexception","forcepopup","displaycross","displayboxclear","displayoptionspagelink","pinned","alwaysnewtab","alwaysforegroundtab","removewhitespace","sendsearchsuggestions","displayhighlightbutton","displayfindbuttons","detect","detecttosearchhistory","disablesearchhistory"];
@@ -698,7 +698,7 @@ window.addEventListener("load",function(){
                   "findbuttonhotkeys":settings.findbuttonhotkeys
                 },storageseterrorhandler);
                 if(i==0&&j==0){
-                  findbuttons[1].title="find in page"+(settings.findbuttonhotkeys[0][0][0]===false?"":(" ("+hotkeytotext(settings.findbuttonhotkeys[0][0])+")"));
+                  findbuttons[1].title="在页面里查找"+(settings.findbuttonhotkeys[0][0][0]===false?"":(" ("+hotkeytotext(settings.findbuttonhotkeys[0][0])+")"));
                 }
                 event.preventDefault();
               }
@@ -724,7 +724,7 @@ window.addEventListener("load",function(){
                 "findbuttonhotkeys":settings.findbuttonhotkeys
               },storageseterrorhandler);
               if(i==0&&j==0){
-                findbuttons[1].title="find in page";
+                findbuttons[1].title="在页面里查找";
               }
             };
           })(i,j));
@@ -808,12 +808,12 @@ window.addEventListener("load",function(){
           cells[i][j].style.borderBottom="1px solid #d0d0d0";
           cells[i][j].style.borderLeft="2px solid #f0f0f0";
           cells[i][j].style.borderRight="2px solid #f0f0f0";
-          cells[i][j].title="primary search (Enter)";
+          cells[i][j].title="主搜索（回车）";
         }
         if(j==0){
           propertiesbuttons[i]=[document.createElement("img"),document.createElement("img")];
           propertiesbuttons[i][0].src="delete.png";
-          propertiesbuttons[i][0].title="delete";
+          propertiesbuttons[i][0].title="删除";
           propertiesbuttons[i][0].alt="X";
           propertiesbuttons[i][0].style.height="16px";
           propertiesbuttons[i][0].style.height="16px";
@@ -851,10 +851,10 @@ window.addEventListener("load",function(){
             }
             inputs[i][j][k].type="checkbox";
             inputs[i][j][k].checked=settings.custombuttons[i-1][k];
-            inputs[i][j][k].title=inputs[i][j][k].checked?("uncheck to "+(k==0?"disable":"remove separator before button")):("check to "+(k==0?"enable":"insert separator before button"));
+            inputs[i][j][k].title=inputs[i][j][k].checked?("不勾选"+(k==0?"禁用":"移除按钮前的分隔符")):("勾选"+(k==0?"启用":"添加按钮前的分隔符"));
             inputs[i][j][k].addEventListener("change",(function(i,j,k){
               return function(){
-                this.title=this.checked?("uncheck to "+(k==0?"disable":"remove separator before button")):("check to "+(k==0?"enable":"insert separator before button"));
+                this.title=this.checked?("不勾选"+(k==0?"禁用":"移除按钮前的分隔符")):("勾选"+(k==0?"启用":"添加按钮前的分隔符"));
                 if(k==0){
                   inputs[i][j][1].disabled=(!this.checked);
                   for(l=1;l<8;l++){
@@ -880,7 +880,7 @@ window.addEventListener("load",function(){
             })(i,j,k));
           }
           propertiesbuttons[i][1].src="move.png";
-          propertiesbuttons[i][1].title="click and drag to move button";
+          propertiesbuttons[i][1].title="单击并拖拽按钮";
           propertiesbuttons[i][1].alt="move";
           propertiesbuttons[i][1].style.height="19px";
           propertiesbuttons[i][1].style.width="19px";
@@ -959,7 +959,7 @@ window.addEventListener("load",function(){
           else{
             removehotkeys[i][j]=document.createElement("button");
             removehotkeys[i][j].className="removebutton";
-            removehotkeys[i][j].title="remove";
+            removehotkeys[i][j].title="移除";
             removehotkeys[i][j].disabled=(!settings.custombuttons[i-1][0]);
             removehotkeys[i][j].innerHTML="<img src=\"delete.png\" alt=\"X\" class=\"removebuttonimage\">";
             cells[i][j].appendChild(removehotkeys[i][j]);
