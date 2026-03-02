@@ -4,7 +4,7 @@
   "name": "SearchBar",
   "version": "0.12.0",
   "manifest_version": 3,
-  "description": "The most efficient way to use your favourite search engines. Search selected text, use customizable hotkeys and much more.",
+  "description": "使用您最喜爱的搜索引擎的最有效方式。搜索选定文本，使用自定义快捷键等。",
   "icons": {
     "16": "icon16.png",
     "48": "icon48.png",

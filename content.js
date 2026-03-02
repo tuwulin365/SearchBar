@@ -1027,7 +1027,7 @@
             infodiv.style.display="block";
             infoframe.style.width="100%";
             infoframe.style.boxShadow="none";
-            customsearchdiv.trs[2].button.label.nodeValue=customsearchdiv.trs[2].button.showing?"hide advanced options":"show advanced options";
+            customsearchdiv.trs[2].button.label.nodeValue=customsearchdiv.trs[2].button.showing?"隐藏高级选项":"显示高级选项";
             for(var i=3;i<8;i++){
               customsearchdiv.trs[i].style.display="table-row";
             }
@@ -1074,7 +1074,7 @@
           infoheader.img.src="data:image/png;base64,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";
           infoheader.img.style.verticalAlign="middle";
           infoheader.appendChild(infoheader.img);
-          infoheader.appendChild(document.createTextNode(" Add custom search to SearchBar"));
+          infoheader.appendChild(document.createTextNode(" 添加自定义搜索到 SearchBar"));
           infooptionspagelink=document.createElement("a");
           infooptionspagelink.href=chrome.runtime.getURL("options.html")+"#customsearches";
           addClickIncludingMiddleListener(infooptionspagelink,function(event){
@@ -1110,14 +1110,14 @@
           customsearchdiv.preview.button.img=document.createElement("img");
           cssreset(customsearchdiv.preview.button.img);
           customsearchdiv.preview.button.appendChild(customsearchdiv.preview.button.img);
-          customsearchdiv.preview.appendChild(document.createTextNode("Button preview: "));
+          customsearchdiv.preview.appendChild(document.createTextNode("按钮预览："));
           customsearchdiv.preview.appendChild(customsearchdiv.preview.button);
           customsearchdiv.table=document.createElement("table");
           customsearchdiv.table.style.borderCollapse="collapse";
           customsearchdiv.table.style.fontWeight="bold";
           customsearchdiv.trs=[];
-          customsearchdiv.texts=["Description","Hotkey","","Home page URL","Search URL","Icon URI","New tab hotkey","New tab hotkey"];
-          customsearchdiv.smalltexts=["","(press cross to remove)\u00A0","","","with %s in place of query","","– background tab","– foreground tab"];
+          customsearchdiv.texts=["描述","热键","","主页 URL","搜索 URL","图标 URI","新标签页热键","新标签页热键"];
+          customsearchdiv.smalltexts=["","(按叉键移除)\u00A0","","","用 %s 替代搜索词","","– 后台标签页","– 前台标签页"];
           customsearchdiv.inputs=[];
           for(var i=0;i<8;i++){
             customsearchdiv.trs[i]=document.createElement("tr");
@@ -1153,7 +1153,7 @@
               else if(i==5){
                 customsearchdiv.inputs[i].size=27;
                 customsearchdiv.fileinputbutton=document.createElement("button");
-                customsearchdiv.fileinputbutton.appendChild(document.createTextNode("upload"));
+                customsearchdiv.fileinputbutton.appendChild(document.createTextNode("上传"));
                 customsearchdiv.fileinputbutton.addEventListener("click",function(){
                   customsearchdiv.fileinput.click();
                 });
@@ -1257,7 +1257,7 @@
           customsearchdiv.buttons=document.createElement("div");
           customsearchdiv.buttons.style.margin="3px";
           customsearchdiv.buttons.accept=document.createElement("button");
-          customsearchdiv.buttons.accept.appendChild(document.createTextNode("Add to SearchBar"));
+          customsearchdiv.buttons.accept.appendChild(document.createTextNode("添加到 SearchBar"));
           customsearchdiv.buttons.accept.addEventListener("click",function(){
             infoframe.style.display="none";
             infodiv.style.display="none";
@@ -1269,7 +1269,7 @@
             });
           });
           customsearchdiv.buttons.cancel=document.createElement("button");
-          customsearchdiv.buttons.cancel.appendChild(document.createTextNode("Cancel"));
+          customsearchdiv.buttons.cancel.appendChild(document.createTextNode("取消"));
           customsearchdiv.buttons.cancel.addEventListener("click",function(){
             infoframe.style.display="none";
             infodiv.style.display="none";
@@ -1283,16 +1283,16 @@
           customsearcherrordiv=document.createElement("div");
           customsearcherrordiv.messages=[document.createElement("div"),document.createElement("div")];
           customsearcherrordiv.messages[0].style.margin="3px";
-          customsearcherrordiv.messages[0].appendChild(document.createTextNode("SearchBar was unable to detect the settings for this custom search."));
+          customsearcherrordiv.messages[0].appendChild(document.createTextNode("SearchBar 检测不到此自定义搜索的设置。"));
           customsearcherrordiv.messages[0].appendChild(document.createElement("br"));
-          customsearcherrordiv.messages[0].appendChild(document.createTextNode("Please wait for the page to finish loading and try again."));
+          customsearcherrordiv.messages[0].appendChild(document.createTextNode("请等待页面完成加载然后重试。"));
           customsearcherrordiv.messages[1].style.margin="3px";
-          customsearcherrordiv.messages[1].appendChild(document.createTextNode("SearchBar was unable to detect the settings for this custom search."));
+          customsearcherrordiv.messages[1].appendChild(document.createTextNode("SearchBar 检测不到此自定义搜索的设置。"));
           customsearcherrordiv.messages[1].appendChild(document.createElement("br"));
-          customsearcherrordiv.messages[1].appendChild(document.createTextNode("It may still be possible to add this custom search manually via the options page."));
+          customsearcherrordiv.messages[1].appendChild(document.createTextNode("也许可以通过选项页面手动添加该自定义搜索。"));
           customsearcherrordiv.button=document.createElement("button");
           customsearcherrordiv.button.style.margin="3px";
-          customsearcherrordiv.button.appendChild(document.createTextNode("Close"));
+          customsearcherrordiv.button.appendChild(document.createTextNode("关闭"));
           customsearcherrordiv.button.addEventListener("click",function(){
             infoframe.style.display="none";
             infodiv.style.display="none";
